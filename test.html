@@ -15,7 +15,6 @@
         body {
             background-color: #f8f9fa;
         }
-
         .hero {
             background: linear-gradient(
                 135deg,
@@ -27,6 +26,20 @@
             padding: 100px 20px;
             text-align: center;
         }
+          #healing img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#healing .card {
+    overflow: hidden;
+}
+
+#healing .card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
 
         .section-padding {
             padding: 80px 0;
@@ -44,7 +57,7 @@
         .activity-card {
             border-top: 5px solid #6f42c1;
         }
-
+      
         .game-card {
             border-top: 5px solid #0d6efd;
         }
@@ -291,6 +304,82 @@
 
         </section>
 
+        <section id="healing" class="section-padding bg-light">
+
+    <div class="container">
+
+        <h2 class="text-center mb-3">
+            🐾 Emergency Emotional Support Animals
+        </h2>
+
+        <p class="text-center text-muted mb-5">
+            For academic emergencies, attendance crises,
+            deadline disasters and general emotional damage.
+        </p>
+<div class="alert alert-primary text-center mb-5">
+
+    <strong>Coping Status:</strong>
+
+    Viewing one animal:
+    +5 Mental Health
+
+    <br>
+
+    Viewing all four:
+    Temporary immunity to assignment stress.
+
+</div>
+        <div class="row g-4">
+
+            <div class="col-md-3 col-6">
+                <div class="card shadow-sm">
+                    <img src="images/professor_cat.jpg"
+                         class="img-fluid rounded-top"
+                         alt="Cat">
+                    <div class="card-body text-center">
+                        <small>Professor Whiskers</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card shadow-sm">
+                    <img src="images/deadline_survivor.jpg"
+                         class="img-fluid rounded-top"
+                         alt="Dog">
+                    <div class="card-body text-center">
+                        <small>Deadline Survivor</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card shadow-sm">
+                    <img src="images/inspector_cat.jpg"
+                         class="img-fluid rounded-top"
+                         alt="Cat">
+                    <div class="card-body text-center">
+                        <small>Attendance Inspector</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 col-6">
+                <div class="card shadow-sm">
+                    <img src="images/therapy_dog.jpg"
+                         class="img-fluid rounded-top"
+                         alt="Dog">
+                    <div class="card-body text-center">
+                        <small>Therapy Department</small>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
         <!-- EVENTS SECTION -->
         <section id="events" class="section-padding">
 
