@@ -42,7 +42,7 @@
 }
 
         .section-padding {
-            padding: 80px 0;
+            padding: 50px 0;
         }
 
         .card {
@@ -57,7 +57,7 @@
         .activity-card {
             border-top: 5px solid #6f42c1;
         }
-      
+
         .game-card {
             border-top: 5px solid #0d6efd;
         }
@@ -70,10 +70,20 @@
             border-left: 5px solid #6f42c1;
         }
 
-        .quote-section {
-            background-color: #212529;
-            color: white;
-        }
+.quote-card {
+    background: linear-gradient(
+        135deg,
+        #f3f0ff,
+        #e7f1ff
+    );
+
+    padding: 50px;
+    border-radius: 20px;
+
+    border-left: 6px solid #6f42c1;
+
+    transition: 0.3s ease;
+}
 
         .stats-section h1 {
             font-size: 3rem;
@@ -124,7 +134,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#activities">Activities</a>
                         </li>
-
+                        <li class="nav-item">
+                             <a class="nav-link fw-bold text-warning" href="#healing">
+                                 SOS
+                             </a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#events">Events</a>
                         </li>
@@ -174,6 +188,23 @@
             </div>
 
         </section>
+        <div class="container mt-4">
+
+  <!---- <div class="status-card ms-auto">
+
+        <h6>📡 Current Student Status</h6>
+
+        <small>
+            Stress: ████████░░ 80%
+            <br>
+            Motivation: ███░░░░░░░ 30%
+            <br>
+            Delusion: ██████████ 100%
+        </small>
+
+    </div>
+
+</div> -->
 
         <!-- ABOUT SECTION -->
         <section id="about" class="section-padding">
@@ -204,25 +235,29 @@
         </section>
 
         <!-- QUOTE SECTION -->
-        <section class="quote-section section-padding">
+        <section class="section-padding">
 
-            <div class="container text-center">
+    <div class="container">
 
-                <h2 class="mb-4">
-                    The Unofficial College Experience
-                </h2>
+        <div class="quote-card mx-auto text-center">
 
-                <p class="fs-4 fst-italic">
-                    "I'll start the assignment tomorrow."
-                </p>
+            <h2 class="mb-4">
+                The Unofficial College Experience
+            </h2>
 
-                <p class="fs-4 fst-italic">
-                    — Every student, every semester
-                </p>
+            <p class="fs-4 fst-italic">
+                "I'll start the assignment tomorrow."
+            </p>
 
-            </div>
+            <p class="text-muted">
+                — Every student, every semester
+            </p>
 
-        </section>
+        </div>
+
+    </div>
+
+</section>
 
         <!-- ACTIVITIES -->
         <section id="activities" class="bg-light section-padding">
@@ -478,7 +513,28 @@
                             <div class="card-body">
 
                                 <h5>
-                                    😵 Second Year Student
+                                    😭 Attendance Defaulter
+                                </h5>
+                                    <p>
+                                        My attendance percentage and mental stability were both
+                                        dropping rapidly. At least this club helped improve one
+                                        of them.
+                                    </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <article class="card review-card shadow h-100">
+
+                            <div class="card-body">
+
+                                <h5>
+                                    📝 Assignment Victim
                                 </h5>
 
                                 <p>
@@ -488,26 +544,6 @@
                                     everyone else was equally confused.
                                 </p>
 
-                            </div>
-
-                        </article>
-
-                    </div>
-
-                    <div class="col-md-4">
-
-                        <article class="card review-card shadow h-100">
-
-                            <div class="card-body">
-
-                                <h5>
-                                    ☕ Engineering Student
-                                </h5>
-
-                                <p>
-                                    This club is basically group therapy
-                                    disguised as friendship.
-                                </p>
 
                             </div>
 
@@ -522,15 +558,14 @@
                             <div class="card-body">
 
                                 <h5>
-                                    📚 Final Year Student
+                                    😵 Professional Procrastinator
                                 </h5>
 
-                                <p>
-                                    During placements I thought I was
-                                    the only one panicking.
-                                    Turns out everybody was.
-                                </p>
-
+                                    <p>
+                                        I was going to write this review tomorrow, but that's
+                                        kind of the problem. This club made me feel a little
+                                        less alone in my bad habits.
+                                    </p>
                             </div>
 
                         </article>
@@ -542,6 +577,7 @@
             </div>
 
         </section>
+
 
         <!-- STATS SECTION -->
         <section class="stats-section section-padding text-center">
